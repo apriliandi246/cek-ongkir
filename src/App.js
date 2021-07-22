@@ -1,7 +1,7 @@
 import Form from "./components/Form";
 import Header from "./components/Header";
-import Result from "./components/Result";
 import LoadingSkeleton from "./components/LoadingSkeleton";
+import ResultContainer from "./components/ResultContainer";
 import "./css/App.css";
 
 export default function App() {
@@ -9,7 +9,7 @@ export default function App() {
 		<div className="container">
 			<Header />
 			<Form />
-			<Result />
+			<ResultContainer />
 			<LoadingSkeleton />
 		</div>
 	);

@@ -87,3 +87,9 @@
 	margin-right: 16px;
 	position: absolute;
 }
+
+.break {
+	text-align: center;
+	margin-bottom: 20px;
+	font: bold 30px monospace;
+}
