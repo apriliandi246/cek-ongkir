@@ -1,7 +1,16 @@
+import Form from "./components/Form";
+import Header from "./components/Header";
+import Result from "./components/Result";
+import LoadingSkeleton from "./components/LoadingSkeleton";
 import "./css/App.css";
 
-function App() {
-	return <h1>Hello World</h1>;
+export default function App() {
+	return (
+		<div className="container">
+			<Header />
+			<Form />
+			<Result />
+			<LoadingSkeleton />
+		</div>
+	);
 }
-
-export default App;
