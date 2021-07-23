@@ -29,7 +29,7 @@ export default function App() {
 		setSubmitStatus(true);
 		window.scrollTo(999, 0);
 
-		fetch("https://rajaongkir-api.vercel.app/api/provinsi", {
+		fetch("http://localhost:3001/api/ongkir", {
 			method: "POST",
 			body: JSON.stringify({ origin, destination, weight, courier }),
 		})
