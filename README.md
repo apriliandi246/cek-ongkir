@@ -6,6 +6,8 @@
 
 Cek ongkir di beberapa ekspedisi.
 
+Kamu bisa memakai data/API nya [disini.](https://github.com/apriliandi246/rajaongkir-api)
+
 <h3 align="center">. . .</h3>
 
 ### 🧰 Tech Stack
