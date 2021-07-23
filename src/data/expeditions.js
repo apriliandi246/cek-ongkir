@@ -1,6 +1,6 @@
 module.exports = [
 	{
-		name: "POST",
+		name: "POS",
 		value: "pos",
 	},
 	{
