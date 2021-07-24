@@ -36,7 +36,7 @@ export default function Result({ result, basicInfo, expedition }) {
 
 				<div className={styles.origin}>
 					<p className={styles.origin__label}>Estimasi waktu :</p>
-					<p className={styles.origin__place}>{result.cost[0].etd} hari</p>
+					<p className={styles.origin__place}>{result.cost[0].etd}</p>
 				</div>
 
 				<div className={styles.origin}>

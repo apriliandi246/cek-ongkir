@@ -19,6 +19,7 @@ export default function ResultContainer({ data }) {
 				<Result
 					result={cost}
 					basicInfo={basicInfo}
+					key={cost.description}
 					expedition={data.rajaongkir.results[0].code}
 				/>
 			))}

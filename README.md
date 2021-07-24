@@ -24,12 +24,6 @@ Kamu bisa memakai data/API nya [disini.](https://github.com/apriliandi246/rajaon
 
 Intall all dependencies.
 
-`npm install`
-
-<h3 align="center">. . .</h3>
-
-### ⚠ problems
-
-- _CORS_ when fetching API
+`yarn install`
 
 <h3 align="right">(⌐■_■)</h3>

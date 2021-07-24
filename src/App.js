@@ -29,7 +29,7 @@ export default function App() {
 		setSubmitStatus(true);
 		window.scrollTo(999, 0);
 
-		fetch("http://localhost:3001/api/ongkir", {
+		fetch("https://rajaongkir-api.vercel.app/api/ongkir", {
 			method: "POST",
 			body: JSON.stringify({ origin, destination, weight, courier }),
 		})
@@ -143,7 +143,9 @@ export default function App() {
 			{submitStatus === false && data !== "" && <ResultContainer data={data} />}
 
 			{submitStatus === true &&
-				expeditions.map((expedition) => <LoadingSkeleton />)}
+				expeditions.map((expedition) => (
+					<LoadingSkeleton key={expedition.value} />
+				))}
 		</div>
 	);
 }
