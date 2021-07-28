@@ -6,18 +6,18 @@ export default function LoadingSkeleton() {
 			<div style={{ height: "48px" }} className={styles.card__block}></div>
 
 			<div
-				style={{ height: "48px", marginTop: "20px" }}
 				className={styles.card__block}
+				style={{ height: "48px", marginTop: "20px" }}
 			></div>
 
 			<div
-				style={{ height: "48px", marginTop: "20px" }}
 				className={styles.card__block}
+				style={{ height: "48px", marginTop: "20px" }}
 			></div>
 
 			<div
-				style={{ height: "48px", marginTop: "20px" }}
 				className={styles.card__block}
+				style={{ height: "48px", marginTop: "20px" }}
 			></div>
 		</div>
 	);

@@ -27,7 +27,10 @@ export default function App() {
 	function submit(event) {
 		event.preventDefault();
 		setSubmitStatus(true);
-		window.scrollTo(999, 0);
+
+		setTimeout(() => {
+			window.scrollTo(0, 1240);
+		});
 
 		fetch("https://rajaongkir-api.vercel.app/api/ongkir", {
 			method: "POST",
@@ -128,14 +131,25 @@ export default function App() {
 						xmlns="http://www.w3.org/2000/svg"
 					>
 						<path
+							clipRule="evenodd"
 							fillRule="evenodd"
 							d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
-							clipRule="evenodd"
 						/>
 					</svg>
 				</div>
 
-				<button type="submit" className={formStyles.button_form}>
+				<button
+					type="submit"
+					className={formStyles.button_form}
+					disabled={
+						origin !== "" &&
+						destination !== "" &&
+						weight !== 0 &&
+						courier !== ""
+							? false
+							: true
+					}
+				>
 					Tampilkan hasil
 				</button>
 			</form>

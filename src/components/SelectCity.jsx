@@ -8,20 +8,27 @@ export default function SelectCity({
 }) {
 	return (
 		<div style={{ position: "relative" }} className={styles.input_form}>
-			<label htmlFor="from-city" className={styles.input_form__label}>
+			<label
+				htmlFor="from-city"
+				className={styles.input_form__label}
+				style={{ color: province === "" ? "#9a9a9a" : "#473a3a" }}
+			>
 				{statusPlace === "origin"
 					? "Dari kota/kabupaten mana"
 					: "Ke kota/kabupaten mana"}
 			</label>
 
 			<select
+				required
 				id="from-city"
 				className={styles.input_form__input}
 				disabled={province === "" ? true : false}
 				style={{ appearance: "none", paddingRight: "60px" }}
 				onChange={(event) => setTheCity(parseInt(event.target.value))}
 			>
-				<option hidden>Pilih kota/kabupaten</option>
+				<option value="" hidden selected>
+					Pilih kota/kabupaten
+				</option>
 
 				{province === ""
 					? ""
@@ -42,8 +49,8 @@ export default function SelectCity({
 			>
 				<path
 					fillRule="evenodd"
-					d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
 					clipRule="evenodd"
+					d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
 				/>
 			</svg>
 		</div>

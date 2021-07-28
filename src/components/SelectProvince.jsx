@@ -12,12 +12,15 @@ export default function Selectprovince({
 			</label>
 
 			<select
+				required
 				id="from-province"
 				className={styles.input_form__input}
 				style={{ appearance: "none", paddingRight: "60px" }}
 				onChange={(event) => setTheProvince(parseInt(event.target.value))}
 			>
-				<option hidden>Pilih provinsi</option>
+				<option value="" hidden selected>
+					Pilih provinsi
+				</option>
 
 				{provinces.map((province) => (
 					<option key={province.province_id} value={province.province_id}>
@@ -36,8 +39,8 @@ export default function Selectprovince({
 			>
 				<path
 					fillRule="evenodd"
-					d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
 					clipRule="evenodd"
+					d="M5.293 7.293a1 1 0 011.414 0L10 10.586l3.293-3.293a1 1 0 111.414 1.414l-4 4a1 1 0 01-1.414 0l-4-4a1 1 0 010-1.414z"
 				/>
 			</svg>
 		</div>
